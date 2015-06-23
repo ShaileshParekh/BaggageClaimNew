@@ -1,0 +1,38 @@
+package com.flight.assignment;
+
+public class Flight {
+
+	private final String id;
+	private final City sourceCity;
+	private final City destinationCity;
+	private final int flightTiming;
+
+	public Flight(String id, City source, City destination, int timing) {
+		this.id = id;
+		this.sourceCity = source;
+		this.destinationCity = destination;
+		this.flightTiming = timing;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public City getDestination() {
+		return destinationCity;
+	}
+
+	public City getSource() {
+		return sourceCity;
+	}
+
+	public int getWeight() {
+		return flightTiming;
+	}
+
+	@Override
+	public String toString() {
+		return sourceCity + " " + destinationCity;
+	}
+
+}
